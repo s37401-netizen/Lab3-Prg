@@ -1,4 +1,4 @@
-﻿// Zadanie1
+// Zadanie1
 /*
 Console.Write("Wpisz liczbę: ");
 int liczba = int.Parse(Console.ReadLine()!);
@@ -123,7 +123,7 @@ int akcja = int.Parse(Console.ReadLine()!);
 
 
 
-if (hp < 0)
+if (hp <= 0)
 {
     Console.WriteLine("Przegrałeś");
 }
@@ -186,7 +186,7 @@ Console.WriteLine("|             KARTA BOHATERA               |");
 Console.WriteLine("+==========================================+");
 Console.ResetColor();
 Console.WriteLine($"|Bohater: {imie}                            |");
-Console.WriteLine($"|Mikstury: {poziom}                               |");
+Console.WriteLine($"|Poziom: {poziom}                               |");
 if (hp < 21)
 {
     Console.ForegroundColor = ConsoleColor.Red;
@@ -201,7 +201,7 @@ else
 }
 Console.WriteLine($"|Zdrowie: {hp}                              |");
 Console.ResetColor();
-Console.WriteLine($"|Mikstury: {sila}                               |");
+Console.WriteLine($"|Siła: {sila}                               |");
 Console.WriteLine($"|Mikstury: {mikstury}                               |");    
 Console.WriteLine($"|Złoto: {zloto}                                 |");   
 Console.WriteLine($"|Ma mapę: {maMape}                              |");    
