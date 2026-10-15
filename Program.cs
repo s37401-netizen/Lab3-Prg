@@ -216,15 +216,21 @@ Console.WriteLine("Ready?");
 bool ready = bool.Parse(Console.ReadLine()!);
 if (ready)
 {  
-    Console.WriteLine("Wybierz akcje: 1- 2- 3-");
+    Console.WriteLine("Wybierz akcje: 1-Zdobyć złoto 2-Dodać zdrowię 3-Dodać siłę");
     int akcja = int.Parse(Console.ReadLine()!);
     switch (akcja)
     {
         case 1:
+            zloto += 20;
+            Console.WriteLine(zloto);
             break;
         case 2:
+            hp += 20;
+            Console.WriteLine(hp);
             break;
         case 3:
+            sila += 20;
+            Console.WriteLine(sila);
             break;
     }
 }
